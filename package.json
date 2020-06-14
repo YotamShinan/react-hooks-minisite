@@ -13,6 +13,7 @@
     "react-scripts": "3.4.1",
     "sass": "^1.26.8"
   },
+  "homepage":"https://yotamshinan.github.io/react-hooks-minisite/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
