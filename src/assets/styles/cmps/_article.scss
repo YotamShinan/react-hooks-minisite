@@ -1,0 +1,77 @@
+.article {
+    p {
+        font-family: Merry;
+        line-height: 1.7em;
+        letter-spacing: 1px;
+        color: #2f3640;
+    }
+
+    h3 {
+        font-family: Merry;
+        line-height: 2em;
+        letter-spacing: 1px;
+    }
+
+    a {
+        color: #426eea;
+    }
+
+    ul {
+        background-color: gainsboro;
+        padding: 10px 30px 30px 30px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+
+        li {
+            font-family: Merry;
+            line-height: 1.7em;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            color: #2f3640;
+        }
+    }
+
+    div {
+        margin: 25px 0 25px 0;
+        border: 2px solid white;
+        border-radius: 20px;
+        box-shadow: 1px 2px 13px 2;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .img1 {
+        background-image: url("../../img/1a.png");
+        width: 80%;
+        height: 486px;
+    }
+
+    .img2 {
+        background-image: url("../../img/2a.png");
+        width: 80%;
+        height: 388px;
+    }
+
+    .p5,
+    .p6 {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 1000px) {
+        .img1 { 
+            height: 271px;
+        }
+        .img2 { 
+            height: 216px;
+        }
+    }
+
+    @media (max-width: 570px) {
+        .img1 { 
+            height: 163px;
+        }
+        .img2 { 
+            height: 131px;
+        }
+    }
+}

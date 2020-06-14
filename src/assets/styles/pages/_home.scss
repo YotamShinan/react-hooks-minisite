@@ -1,0 +1,167 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff6e;
+
+    &>* {
+        transition: 0.3s ease-in-out;
+    }
+
+    .header {
+        background-color: #ffffff;
+        width: 100%;
+        height: 8vh;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 4px 6px -1px #f0eef3;
+
+        .logo {
+            background: url("http://d3ftmdkezac6rp.cloudfront.net/plugins/assets/logo.b81d20edb7ae4d8ff43b886ae5cde1dd.svg");
+            height: 30px;
+            width: 150px;
+            background-repeat: no-repeat;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+    .footer {
+        background-color: #f1f2f6;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            background: url("http://d3ftmdkezac6rp.cloudfront.net/plugins/assets/logo.b81d20edb7ae4d8ff43b886ae5cde1dd.svg");
+            height: 30px;
+            width: 150px;
+            background-repeat: no-repeat;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .container {
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        & > * {
+            margin: 30px 0px 30px 0px;
+        }
+
+        .yt-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9cb2f0;
+            width: 640px;
+            height: 500px;
+            border-radius: 30px;
+            box-shadow: 1px 2px 13px 2px rgba(143, 116, 143, 1);
+            transition: 0.3s ease-in-out;
+            
+            iframe {
+                border-radius: 30px;
+                border: none;
+                width: 620;
+                height: 480;
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+        .example-container {
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            height: 250px;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: 1px 2px 13px 2px #8f748f;
+
+            button {
+                background-color: #61a8bf;
+                color: white;
+                height: 30px;
+                width: auto;
+                font-size: 1.3em;
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+                border: 1px solid black;
+            }
+            .name-chooser {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 15px;
+                height: 60%;
+                width: 75%;
+                justify-content: space-around;
+
+                .name-btns {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+
+                .chosen-name {
+                    font-family: Alconica;
+                    font-size: 2em;
+                }
+            }
+        }
+
+        .about-codota {
+            font-family: Merry;
+            line-height: 1.7em;
+            padding: 20px 40px 50px 40px;
+            border-radius: 20px;
+            background-color: #426eea;
+            color: white;
+            letter-spacing: 1px;
+            box-shadow: 1px 2px 13px 2px rgba(143, 116, 143, 1);
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .container {
+            width: 500px;
+
+            .yt-section {
+                width: 470px;
+                height: 375px;
+                iframe {
+                    width: 450px;
+                    height: 355px;
+                }
+            }
+        }
+    }
+    @media (max-width: 570px) {
+        .container {
+            width: 300px;
+
+            .yt-section {
+                width: 300px;
+                height: 220px;
+                iframe {
+                    width: 280px;
+                    height: 200px;
+                }
+            }
+
+            .example-container {
+                max-width: 300px;
+            }
+        }
+    }
+
+
+}
